@@ -9,11 +9,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       {/* Header section of article */}
       <header>
         <div className={classes.image}>
-          <Image
-            src={`https://maxschwarzmueller-nextjs-demo-users-image.s3.amazonaws.com/${image}`}
-            alt={title}
-            fill
-          />
+          <Image src={`/images/${image}`} alt={title} fill />
         </div>
 
         {/* Title and creator's name section */}
