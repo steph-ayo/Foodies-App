@@ -6,6 +6,7 @@ import classes from "./page.module.css";
 export default function Home() {
   return (
     <>
+      {/* Header section */}
       <header className={classes.header}>
         {/* Image Slideshow */}
         <div className={classes.slideshow}>
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Main body text */}
       <main>
         <section className={classes.section}>
           <h2>How it works</h2>
