@@ -11,6 +11,7 @@ export default function NavLink({ href, children }) {
     <Link
       href={href}
       className={
+        // React hook that checks waht page the use is on
         path.startsWith(href)
           ? `${classes.link} ${classes.active}`
           : classes.link
