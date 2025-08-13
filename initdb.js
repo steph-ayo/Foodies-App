@@ -1,11 +1,18 @@
 const sql = require("better-sqlite3");
 const db = sql("meals.db");
+// import burger from "./public/images/burger.jpg";
+// import curry from "./public/images/curry.jpg";
+// import dumplings from "/images/dumplings.jpg";
+// import macncheese from "./public/images/macncheese.jpg";
+// import pizza from "./public/images/pizza.jpg";
+// import schnitzel from "./public/images/schnitzel.jpg";
+// import tomatoSalad from "./public/images/tomato-salad.jpg";
 
 const dummyMeals = [
   {
     title: "Juicy Cheese Burger",
     slug: "juicy-cheese-burger",
-    image: "burger.jpg",
+    image: "/images/burger.jpg",
     summary:
       "A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.",
     instructions: `
@@ -27,7 +34,7 @@ const dummyMeals = [
   {
     title: "Spicy Curry",
     slug: "spicy-curry",
-    image: "curry.jpg",
+    image: curry,
     summary:
       "A rich and spicy curry, infused with exotic spices and creamy coconut milk.",
     instructions: `
@@ -52,7 +59,7 @@ const dummyMeals = [
   {
     title: "Homemade Dumplings",
     slug: "homemade-dumplings",
-    image: "dumplings.jpg",
+    image: dumplings,
     summary:
       "Tender dumplings filled with savory meat and vegetables, steamed to perfection.",
     instructions: `
@@ -74,7 +81,7 @@ const dummyMeals = [
   {
     title: "Classic Mac n Cheese",
     slug: "classic-mac-n-cheese",
-    image: "macncheese.jpg",
+    image: macncheese,
     summary:
       "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
     instructions: `
@@ -99,7 +106,7 @@ const dummyMeals = [
   {
     title: "Authentic Pizza",
     slug: "authentic-pizza",
-    image: "pizza.jpg",
+    image: pizza,
     summary:
       "Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.",
     instructions: `
@@ -121,7 +128,7 @@ const dummyMeals = [
   {
     title: "Wiener Schnitzel",
     slug: "wiener-schnitzel",
-    image: "schnitzel.jpg",
+    image: schnitzel,
     summary:
       "Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.",
     instructions: `
@@ -143,7 +150,7 @@ const dummyMeals = [
   {
     title: "Fresh Tomato Salad",
     slug: "fresh-tomato-salad",
-    image: "tomato-salad.jpg",
+    image: tomatoSalad,
     summary:
       "A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.",
     instructions: `
